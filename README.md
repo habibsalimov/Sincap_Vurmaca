@@ -7,7 +7,12 @@ Sincap Vurma Oyunu, JavaScript, HTML ve CSS kullanılarak oluşturulmuş bir web
 
 Oyunu herhangi bir bilgisayar veya tarayıcıdan açarak oynayabilirsiniz.
 
-
+# Kurulum
+Öncelikle, projeyi bilgisayarınıza indirin veya git clone komutunu kullanın.
+git clone https://github.com/your-username/squirrel-hit-game.git
+İndirme işlemi tamamlandıktan sonra, projenin kök dizinine gidin.
+cd squirrel-hit-game
+Tarayıcınızı açın ve index.html dosyasını açın. Oyun başlamaya hazır!
 
 ##  Oyun İçi Ekranlar
 
