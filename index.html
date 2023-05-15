@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                   <!-- Ekran genişliğini cihaz genişliğine ayarlar ve başlangıç ölçeklemesini 1'e ayarlar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sincap Vurma Oyunu</title>                                          <!-- Oyunun CSS stilini belirler. -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>                                                                         <!-- Başlangıç ekranı -->
+    <div id="startScreen" class="start-screen">
+        <h1>Sincap Vurma Oyunu</h1>                                     <!-- Oyunu başlatmak için bir düğme -->
+        <button id="startButton" class="start-button">Oyunu Başlat</button>
+        <button id="howToPlayButton" class="start-button">Nasıl Oynanır</button>       
+        <div class="cursor"></div>                                               <!-- Zorluk seviyesini seçmek için bir bölüm -->
+        <div id="levelSelection" class="level-selection">
+            <h2>Zorluk Seviyesi Seçin</h2>
+            <div>
+                <input type="radio" id="easyButton" name="difficulty" value="easy">
+                <label for="easyButton">Kolay</label>
+            </div>
+            <div>
+                <input type="radio" id="mediumButton" name="difficulty" value="medium">
+                <label for="mediumButton">Orta</label>
+            </div>
+            <div>
+                <input type="radio" id="hardButton" name="difficulty" value="hard">
+                <label for="hardButton">Zor</label>
+            </div>
+        </div>
+    </div>                                                                      <!-- Oyun menüsü -->
+    <div id="menu" class="menu">
+        <button id="exitButton" class="menu-button">Oyundan Çık</button>
+        <button id="restartButton" class="menu-button">Yeniden Başlat</button>
+    </div>                                                                      <!-- Skoru gösterir -->
+    <h1 class="score">SCORE: <span>00</span></h1>                               <!-- Oyun tahtası -->
+    <div class="board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>                                                                      <!-- Oyunun JavaScript kodunu ekler -->
+    <script src="game.js"></script>
+</body>
+</html>
